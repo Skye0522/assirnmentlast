@@ -14,7 +14,7 @@ export const useChatStore = defineStore('chat', {
 
       try {
         const res = await axios.post(
-          'https://calm-river-0d3498600.4.azurestaticapps.net/api/chat',
+          'https://m3h-nochiyama-containerlast.purplefield-f71af35b.japaneast.azurecontainerapps.io/api/chat',
           {
             message: text,
           },

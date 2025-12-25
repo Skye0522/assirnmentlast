@@ -11,10 +11,13 @@ export const useAuthStore = defineStore('auth', {
 
   actions: {
     async login(employeeNo, password) {
-      const res = await axios.post('https://calm-river-0d3498600.4.azurestaticapps.net/api/login', {
-        employeeNo,
-        password,
-      })
+      const res = await axios.post(
+        'https://m3h-nochiyama-containerlast.purplefield-f71af35b.japaneast.azurecontainerapps.io/api/login',
+        {
+          employeeNo,
+          password,
+        },
+      )
 
       this.isLoggedIn = true
       this.employeeNo = res.data.employee_no

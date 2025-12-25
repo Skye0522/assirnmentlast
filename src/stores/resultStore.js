@@ -18,7 +18,7 @@ export const useResultStore = defineStore('result', {
 
       try {
         const res = await axios.get(
-          'https://calm-river-0d3498600.4.azurestaticapps.net/api/SELECT',
+          'https://m3h-nochiyama-containerlast.purplefield-f71af35b.japaneast.azurecontainerapps.io/api/SELECT',
           {
             params: {
               officeId: this.officeId,

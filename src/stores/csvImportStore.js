@@ -19,7 +19,7 @@ export const useCsvImportStore = defineStore('csvImport', {
     async importFormulaCsv(file) {
       return this.importCsv(
         'formula',
-        'https://calm-river-0d3498600.4.azurestaticapps.net/api/csv/formula',
+        'https://m3h-nochiyama-containerlast.purplefield-f71af35b.japaneast.azurecontainerapps.io/api/csv/formula',
         file,
       )
     },
@@ -27,7 +27,7 @@ export const useCsvImportStore = defineStore('csvImport', {
     async importPerformanceCsv(file) {
       return this.importCsv(
         'performance',
-        'https://calm-river-0d3498600.4.azurestaticapps.net/api/csv/performance',
+        'https://m3h-nochiyama-containerlast.purplefield-f71af35b.japaneast.azurecontainerapps.io/api/csv/performance',
         file,
       )
     },

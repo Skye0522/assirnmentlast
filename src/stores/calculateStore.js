@@ -13,7 +13,9 @@ export const useCalculateStore = defineStore('calculate', {
         this.success = null
         this.error = null
 
-        await axios.get('https://calm-river-0d3498600.4.azurestaticapps.net/api/calculate')
+        await axios.get(
+          'https://m3h-nochiyama-containerlast.purplefield-f71af35b.japaneast.azurecontainerapps.io/api/calculate',
+        )
 
         this.success = '計算処理が完了しました'
       } catch (error) {
