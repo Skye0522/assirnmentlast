@@ -11,7 +11,7 @@ export const useAuthStore = defineStore('auth', {
 
   actions: {
     async login(employeeNo, password) {
-      const res = await axios.post('/api/login', {
+      const res = await axios.post('https://calm-river-0d3498600.4.azurestaticapps.net/api/login', {
         employeeNo,
         password,
       })

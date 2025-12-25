@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const useCalculateStore = defineStore('calculate', {
   state: () => ({
-    yearMonth: '', // 取得年月
+    yearMonth: '',
     success: null,
     error: null,
   }),
@@ -13,7 +13,7 @@ export const useCalculateStore = defineStore('calculate', {
         this.success = null
         this.error = null
 
-        await axios.get('/api/calculate')
+        await axios.get('https://calm-river-0d3498600.4.azurestaticapps.net/api/calculate')
 
         this.success = '計算処理が完了しました'
       } catch (error) {

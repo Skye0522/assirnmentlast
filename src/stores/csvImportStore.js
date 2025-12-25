@@ -17,11 +17,19 @@ export const useCsvImportStore = defineStore('csvImport', {
 
   actions: {
     async importFormulaCsv(file) {
-      return this.importCsv('formula', '/api/csv/formula', file)
+      return this.importCsv(
+        'formula',
+        'https://calm-river-0d3498600.4.azurestaticapps.net/api/csv/formula',
+        file,
+      )
     },
 
     async importPerformanceCsv(file) {
-      return this.importCsv('performance', '/api/csv/performance', file)
+      return this.importCsv(
+        'performance',
+        'https://calm-river-0d3498600.4.azurestaticapps.net/api/csv/performance',
+        file,
+      )
     },
 
     async importCsv(type, url, file) {

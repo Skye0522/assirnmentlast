@@ -13,9 +13,12 @@ export const useChatStore = defineStore('chat', {
       this.loading = true
 
       try {
-        const res = await axios.post('/api/chat', {
-          message: text,
-        })
+        const res = await axios.post(
+          'https://calm-river-0d3498600.4.azurestaticapps.net/api/chat',
+          {
+            message: text,
+          },
+        )
 
         this.messages.push({
           role: 'ai',

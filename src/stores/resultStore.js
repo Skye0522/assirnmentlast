@@ -17,13 +17,16 @@ export const useResultStore = defineStore('result', {
       this.error = null
 
       try {
-        const res = await axios.get('/api/SELECT', {
-          params: {
-            officeId: this.officeId,
-            from: this.from,
-            to: this.to,
+        const res = await axios.get(
+          'https://calm-river-0d3498600.4.azurestaticapps.net/api/SELECT',
+          {
+            params: {
+              officeId: this.officeId,
+              from: this.from,
+              to: this.to,
+            },
           },
-        })
+        )
 
         this.monthlyResults = res.data.data ?? []
       } catch (e) {
