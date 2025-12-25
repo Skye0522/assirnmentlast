@@ -1,7 +1,7 @@
 <template>
   <div class="title">分析チャットボット</div>
   <div>
-    使い方：「399xxxxオフィスの20xx年のxx月～xx月の挙績率を分析して」のように話しかけてみてください。
+    使い方：「399xxxxオフィスの20xx年xx月～xx月の挙績率を分析して」のように話しかけてみてください。
   </div>
   <v-container class="fill-height d-flex flex-column">
     <!-- メッセージ表示 -->
