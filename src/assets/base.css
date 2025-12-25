@@ -1,0 +1,17 @@
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+
+  background-image: url(/43515.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: overlay;
+
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+}
